@@ -20,12 +20,18 @@ class PendingTasks extends Component{
     var toDo = form.querySelector('input[name="To-Do"]').value;
     var name = form.querySelector('input[name="Name"]').value;
     var deadline = form.querySelector('input[name="Deadline"]').value;
-    toDoRef.add({
+    if(toDo && name && deadline != null){
+       toDoRef.add({
         'toDo':toDo,
         'name':name,
         'deadline':deadline,
         'complete': false,
-    });
+    }); 
+    }
+    else{
+        alert('Please enter values');
+    }
+    
     
 
         this.setState({
@@ -38,9 +44,9 @@ class PendingTasks extends Component{
             <div>
                 <form className='createToDo'>
                     
-                <input type="text" id="toDo" name="To-Do" placeholder="To-Do: "></input><br />
-                <input type="text" id="name" name="Name" placeholder="Name: "></input><br />
-                <input type="text" id="deadline" name="Deadline" placeholder="Deadline: "></input><br />
+                <input required type="text" id="toDo" name="To-Do" placeholder="To-Do: "></input><br />
+                <input required type="text" id="name" name="Name" placeholder="Name: "></input><br />
+                <input required type="text" id="deadline" name="Deadline" placeholder="Deadline: "></input><br />
 
                 <button onClick={this.addToDo} className='add-btn'>Add</button>
                 </form>
