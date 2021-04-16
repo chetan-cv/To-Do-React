@@ -14,12 +14,15 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "scripts": {
+  "scripts": { 
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^9.10.0"
-  }
+    "firebase-tools": "^9.10.0",
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "http://chetan-cv.github.io/To-Do-React"
 }
