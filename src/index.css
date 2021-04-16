@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+button{
+  outline: none;
+  border: none;
+}
+.signOut{
+  float: right;
+  margin: 2rem;
+}
+.signOutBtn{
+  border-radius: 10px;
+  padding:1rem;
+  background-color: rgba(11, 70, 230, 0.699);
+  color: white;
+  cursor: pointer;
+}
+.signInDiv{
+  margin: 20rem auto;
+  text-align: center;
+}
+.signInButton{
+  border-radius: 10px;
+  padding:1rem;
+  background-color: rgba(11, 70, 230, 0.699);
+  color: white;
+  cursor: pointer;
+}
+.header{
+  padding: 5rem;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.task{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    color: #000;
+    background-color: rgb(224, 223, 223);
+}
+.createToDo{
+  padding:2rem;
+  text-align: center;
+}
+input {
+	background-color: rgb(224, 223, 223);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 30%;
+}
+.add-btn{
+  border-radius: 10px;
+  padding:0.5rem;
+  width: 10%;
+  background-color: rgba(5, 187, 14, 0.644);
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 400px){
+  .task{
+    width: 40vw;
+    min-width: 300px;
+  }  
+}
+.pendingTask{
+  background-color: rgb(243, 240, 240);
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 800px){
+  .pendingTask{
+    width: 60vw;
+    min-width: 600px;
+  }  
+}
+.titleBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+.titleBox > p{
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1;
 }
