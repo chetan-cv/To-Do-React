@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/To-Do-React/static/css/main.1e89199f.chunk.css",
+    "main.css": "/To-Do-React/static/css/main.894ba587.chunk.css",
     "main.js": "/To-Do-React/static/js/main.9bad1a1c.chunk.js",
     "main.js.map": "/To-Do-React/static/js/main.9bad1a1c.chunk.js.map",
     "runtime-main.js": "/To-Do-React/static/js/runtime-main.393dba12.js",
@@ -12,7 +12,7 @@
     "static/js/3.3e41d3fa.chunk.js.map": "/To-Do-React/static/js/3.3e41d3fa.chunk.js.map",
     "index.html": "/To-Do-React/index.html",
     "static/css/2.c5954681.chunk.css.map": "/To-Do-React/static/css/2.c5954681.chunk.css.map",
-    "static/css/main.1e89199f.chunk.css.map": "/To-Do-React/static/css/main.1e89199f.chunk.css.map",
+    "static/css/main.894ba587.chunk.css.map": "/To-Do-React/static/css/main.894ba587.chunk.css.map",
     "static/js/2.401d75d9.chunk.js.LICENSE.txt": "/To-Do-React/static/js/2.401d75d9.chunk.js.LICENSE.txt",
     "static/media/clipboard.a846b79f.svg": "/To-Do-React/static/media/clipboard.a846b79f.svg",
     "static/media/font-awesome.min.css": "/To-Do-React/static/media/fontawesome-webfont.f691f37e.woff"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.393dba12.js",
     "static/css/2.c5954681.chunk.css",
     "static/js/2.401d75d9.chunk.js",
-    "static/css/main.1e89199f.chunk.css",
+    "static/css/main.894ba587.chunk.css",
     "static/js/main.9bad1a1c.chunk.js"
   ]
 }
