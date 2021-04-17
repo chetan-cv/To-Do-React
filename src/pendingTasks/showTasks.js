@@ -4,14 +4,16 @@ import { firestore, auth } from '../firebase';
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 const ShowTasks = () => {
-    const toDoRef = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+    // const toDoRef = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+    const toDoRef = firestore.collection(`users/todos/list`);
 
     const todos = useCollectionData(toDoRef, {'idField':'id'});
     const [tasks, setTasks] = useState([]);
 
     const fetchData = async () => {
         var temp = [];
-        const response = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+        // const response = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+        const response = firestore.collection(`users/todos/list`);
         const data = await response.get();
         data.docs.forEach((item) => {
             temp.push( {
@@ -28,12 +30,14 @@ const ShowTasks = () => {
     }, [])
 
     const completeToDo = (id) => {
-        firestore.collection(`users/${auth.currentUser.uid}/todos`).doc(id).set({complete:true},{merge:true});
+        // firestore.collection(`users/${auth.currentUser.uid}/todos`).doc(id).set({complete:true},{merge:true});
+        firestore.collection(`users/todos/list`).doc(id).set({complete:true},{merge:true});
         fetchData();
         }
         
     const deleteToDo = (id) => { 
-        firestore.collection(`users/${auth.currentUser.uid}/todos`).doc(id).delete(); 
+        // firestore.collection(`users/${auth.currentUser.uid}/todos`).doc(id).delete(); 
+        firestore.collection(`users/todos/list`).doc(id).delete();
         fetchData();
 }
         

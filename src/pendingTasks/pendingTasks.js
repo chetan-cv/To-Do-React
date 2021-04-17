@@ -13,7 +13,8 @@ class PendingTasks extends Component{
     }
 
     addToDo = (e)=>{
-    const toDoRef = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+    //const toDoRef = firestore.collection(`users/${auth.currentUser.uid}/todos`);
+    const toDoRef = firestore.collection(`users/todos/list`);
    // const [toDos] = useCollectionData(toDoRef);
         
     var form = document.forms[0];

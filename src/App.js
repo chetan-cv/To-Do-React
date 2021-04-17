@@ -6,9 +6,9 @@ import ToDo from './ToDo';
 import SignIn from './SignIn';
 
 function App() {
-  const [user] = useAuthState(auth);
+  //const [user] = useAuthState(auth);
 
-  return user ? <ToDo /> : <SignIn />
+  return <ToDo /> //: <SignIn />
 }
 
 export default App;
